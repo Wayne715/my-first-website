@@ -1,49 +1,140 @@
-body {
-     margin: 0;
-     background-color: rgb(253, 233, 201); 
+body{
+    margin: 0;
+    background-color: rgb(253, 233, 201); 
+    font-size: 16px;
 }
 .Heading{
+    display: flex;   
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 70px;
-
     background-color: rgb(58, 46, 43);
+}
+.heading-inner{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1120px;
+    height: 70px;
+    background-color: rgb(58, 46, 43);
+    margin: 0 auto;
+}
+.home-button img{
+    width: 250px;
+    height: auto;
+}
+.search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 600px;
+    height: 40px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: rgb(58, 46, 43);
+    color: rgb(212,212,212);
+}
+.search-bar input{
+    box-sizing: border-box;
+    width: 535px;
+    height: 40px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border: none;
+    padding-left: 10px;
+    background-color: rgb(58, 46, 43);
+    color: rgb(212,212,212);
+    font-size: 16px;
+}
+.search-bar button{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 40px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: 1px solid rgb(255, 255, 255);
+    background-color: rgb(133, 56, 54);
+    color: white;
+    cursor: pointer;
+}
+.search-bar button img{
+    height: 40px;
+    width: 40px;
+}
+.h-icons{
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+.h-icons img{
+    width: 40px;           
+    height: 40px;
+    object-fit: contain;    
+    cursor: pointer;
 }
 .navbar{
     display: flex;
+    align-items: center;
     width: 100%;
     height: 30px;
     background-color: rgb(86, 54, 46);
-    margin-top: 70px;
+    top: 70px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+    position: fixed;
 }
-.AGS{
-    font-size: 15px;
-    color: white;
+.navbar-inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 1120px;
     height: 30px;
     background-color: rgb(86, 54, 46);
+    margin: 0 auto;
+}
+.AGS{                        /* Australia gaming store */
+    display : flex;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+    margin-left: auto;
 }
 .btn-group{
-    width: 70%;
-    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    gap: 50px; 
 }
-.btnc{
-    width: 200px;
+.btnc{                      /* Button for nav bar categories */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:auto;
     height: 30px;
     background-color: rgb(86, 54, 46);
     color: white;
-    padding: 5px 5px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    font-size: 14px;
     cursor: pointer;
     margin: 0;
 }
 .shop-categories h2{
     box-sizing: border-box;
-    width: 80%;
+    width: 1120px;
     height: 50px;
     border-top-left-radius: 15px;
     border-top-right-radius: 30px;
@@ -51,15 +142,35 @@ body {
     border-bottom-left-radius: 30px;
     background-color: rgb(86, 54, 46);
     color: white;
-    font-size: 20px;
+    font-family: 'Inkia', monospace;
+    font-weight: bold; 
+    font-size: 24px;
+    margin: 125px auto 0;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
+.featured-products h2{
+    width: 1120px;
+    height: 50px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 30px;
+    background-color: rgb(86, 54, 46);
+    color: white;
     margin: 25px auto 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
     padding-left: 25px;
 }
 .category-group{
-    width: 70%;
-    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 1120px;
+    margin: 0 auto;
 }
 .btns{
     width: 200px;
@@ -70,23 +181,106 @@ body {
     padding: 5px 5px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: flex;                  
+    align-items: center;           
+    justify-content: center;
     font-size: 16px;
     cursor: pointer;
-    margin: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.product-card{
+    width: 265px; 
+    height: 375px;
+    border-radius: 15px;
+    background-color: rgb(253, 240, 220);
+    border: 1px solid rgb(133, 56, 54);
+    padding-bottom: 10px;
+    display: flex;              
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    margin: 25px auto 0;
+}
+.product-img {
+    display: block;
+    width: 100%;
+    height: 265px;
+    object-fit: cover;
+    object-position: top;
+    border-bottom: 1px solid rgb(133, 56, 54);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px; 
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin: 0;
+}  
+.product-title{
+    font-size: 16px;
+    color: rgb(22, 36, 68);
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.stock{
+    font-size: 13px;
+    color: rgb(0, 168, 39);
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.bottom-section{
+    display: flex;
+    justify-content: space-between;
+    height: 25px;
+    align-items: center;
+    margin-top: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(253, 240, 220);
+}
+.price{
+    font-size: 20px;
+    color: rgb(22, 36, 68);
+}
+.card-icons{
+    display: flex;
+    align-items: center;
+    height: 25px;
+    gap: 10px;
+}
+.card-icons img{
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    cursor: pointer;
+}
+.btnv {
+    display: block;
+    margin: 30px auto 0;
+    width: 550px;
+    height: 40px;
+    background-color: rgb(133, 56, 54);        
+    color: white;                
+    font-size: 16px;              
+    border: none;                 
+    border-radius: 15px;           
+    cursor: pointer;             
+    text-align: center;           
 }
 .visit-us{
-    width: 70%;
+    width: 1120px;
     height: 170px;
-    margin: 0 auto;
     background-color: rgb(253, 240, 220);
     color: rgb(22, 36, 68);
     border: 2px solid rgb(133, 56, 54);
     border-radius:  15px;
-    margin: 0 auto;
+    margin: 50px auto 25px;
 }
 .recent-restocks h2{
-    width: 80%;
+    width: 1120px;
     height: 50px;
     border-top-left-radius: 15px;
     border-top-right-radius: 30px;
@@ -105,7 +299,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    width: 70%;
+    width: 1120px;
     height: 300px;
     background-color: rgb(253, 240, 220);
     color: rgb(22, 36, 68);
@@ -114,5 +308,106 @@ body {
     margin:0 auto;
 }
 .why-us *{
-    margin: 0;
+    margin: 0 auto;
+}
+.footerup{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(86, 54, 46);
+    margin: 50px auto 0;
+}
+.footerup-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1120px;
+    height: 70px;
+    background-color: rgb(86, 54, 46);
+    color: white;
+    margin: 0 auto;
+}
+.footerup-inner h2{
+    font-size: 20px;
+}
+.footerup-inner p{
+    font-size: 14px;
+}
+.footerdown{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 220px;
+    background-color: rgb(75, 75, 75);
+}
+.email-subscription{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(253, 240, 220);
+    color: rgb(0, 0, 0);
+}
+.email-subscription input{
+    box-sizing: border-box;
+    width: 320px;
+    height: 30px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border: none;
+    padding-left: 10px;
+    background-color: rgb(253, 240, 220);
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+.email-subscription button{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 30px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid rgb(133, 56, 54);
+    background-color: rgb(133, 56, 54);
+    color: white;
+    cursor: pointer;
+}
+.footerdown-inner{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 1120px;
+    height: 220px;
+    background-color: rgb(75, 75, 75);
+    color: white;
+    margin: 25px auto;
+}
+.FAQ{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 190px;
+    margin-top: 15px;
+    border-left: 2px solid rgb(255, 255, 255);
+}
+.FAQ h2{
+    font-size: 20px;
+    margin: 0 10px 5px;
+}
+.FAQ p{
+    font-size: 16px;
+    margin: 6px 10px 0;
+}
+.FAQ img{
+    margin: 6px 10px 0;
+    width: 200px;
 }

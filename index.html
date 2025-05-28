@@ -7,21 +7,45 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
     <div class="Heading">
-        <div class="Logo">
-             <img src="#" alt="GD Games Logo">
+        <div class="heading-inner">
+             <a href="#" class="home-button">
+                 <img src="website-pic/GDG.png" alt="GD Games Logo">
+             </a>
+             <div class="search-bar">
+                 <input type="text" placeholder="Search for Products...">
+                 <button type="submit">
+                    <img src="website-icons/search.png" alt="Search">
+                </button>
+             </div>
+             <div class="h-icons">
+                 <a href="#" class="like1-button">
+                     <img src="website-icons/favorite.png" alt="Like list">
+                 </a>
+                 <a href="#" class="log-button">
+                     <img src="website-icons/log.png" alt="log in">
+                 </a>
+                 <a href="#" class="cart1-button">
+                     <img src="website-icons/cart.png" alt="Shopping cart">
+                 </a>
+             </div>
         </div>
     </div>
     <div class="navbar">
-        <div class="btn-group">
-             <a href="#" class="btnc">Nintendo Switch</a>
-             <a href="#" class="btnc">PlayStation</a>
-             <a href="#" class="btnc">Xbox</a>
-             <a href="#" class="btnc">Pokemon</a>
-             <a href="#" class="btnc">Yugioh</a>
+        <div class="navbar-inner">
+             <div class="btn-group">
+                 <a href="#" class="btnc">Nintendo Switch</a>
+                 <a href="#" class="btnc">PlayStation</a>
+                 <a href="#" class="btnc">Xbox</a>
+                 <a href="#" class="btnc">Pokemon</a>
+                 <a href="#" class="btnc">Yugioh</a>
+             </div>
+             <h2 class="AGS">Australia's Gaming Store</h2>
         </div>
-        <h2 class="AGS">Australia's Gaming Store</h2>
     </div>
+    </header>
+    <mian>
     <section class="shop-categories">
         <h2>Shop by Category</h2>
         <div class="category-group">
@@ -31,6 +55,28 @@
              <a href="#" class="btns">Pokemon</a>
              <a href="#" class="btns">Yugioh</a>
         </div>
+    </section>
+    <section class="featured-products">
+        <h2>Recent Restocks</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                 <img src="website-pic/Mario-Ode.png" alt="product-img" class="product-img">
+                 <h3 class="product-title">Super Mario Odyssey</h3>
+                 <p class="stock">In Stock</p>
+                 <div class="bottom-section">
+                     <p class="price">$69.00 AUD</p>
+                     <div class="card-icons">
+                         <a href="#" class="like2-button">
+                             <img src="website-icons/favorite2.png" alt="addlike">
+                         </a>
+                         <a href="#" class="cart2-button">
+                             <img src="website-icons/cart2.png" alt="addcart">
+                          </a>
+                     </div>
+                 </div>
+            </div>
+        </div>
+        <button class="btnv">View More</button>
     </section>
     <section class="visit-us">
         <h2>Want to Visit Us?</h2>
@@ -43,6 +89,7 @@
             <img src="https://www.gd-games.com/restock1.png" alt="Restock Item 1">
             <p>Pokemon Scarlet and Violet - $79.99</p>
         </div>
+        <a href="#" class="btnv">View More</a>
     </section>
     <section class="why-us">
         <h2>Why Shop with Us?</h2>
@@ -54,6 +101,47 @@
             <li>Unbeatable Value: Our mission is to deliver the best deals by combining great prices with outstanding customer service.</li>
         </ul>
     </section>
-
+    </mian>
+    <footer>
+        <section class="footerup">
+            <div class="footerup-inner">
+                 <h2>Become A Member Of GD Games</h2>
+                 <p>We will keep you up-to-date with the latest news.</p>
+                 <div class="email-subscription">
+                     <input type="email" placeholder="Enter your email address">
+                     <button type="submit">Subscribe</button>
+                 </div>
+            </div>
+        </section>
+        <section class="footerdown">
+            <div class="footerdown-inner">
+                 <div class="FAQ">
+                    <h2>Got a Question?</h2>
+                    <p>Call Us</p>
+                    <p>0429783792</p>
+                    <p>Mon-Sat 9am-6pm AEST</p>
+                 </div>
+                 <div class="FAQ">
+                    <h2>Learn</h2>
+                    <p>About us</p>
+                    <p>Contact Us</p>
+                    <p>Store Location</p>
+                    <p>Site Map</p>
+                 </div>
+                 <div class="FAQ">
+                    <h2>Service</h2>
+                    <p>Delivery</p>
+                    <p>Return</p>
+                    <p>Refund Policy</p>
+                    <p>Terms of Service</p>
+                    <p>Local Pick Up</p>
+                 </div>
+                 <div class="FAQ">
+                    <h2>We Accept</h2>
+                    <img src="website-pic/paymentmethod.png" alt="payment-methods">
+                 </div>
+            </div>
+        </section>       
+    </footer>
 </body>
 </html>
