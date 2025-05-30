@@ -1,7 +1,7 @@
 body{
     margin: 0;
-    background-color: rgb(253, 233, 201); 
-    font-size: 16px;
+    padding: 0;
+    background-color: rgb(253, 233, 201);
 }
 .Heading{
     display: flex;   
@@ -11,6 +11,7 @@ body{
     width: 100%;
     height: 70px;
     background-color: rgb(58, 46, 43);
+    z-index: 1000; /* Ensures the heading is always on top */
 }
 .heading-inner{
     position: relative;
@@ -91,6 +92,7 @@ body{
     top: 70px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
     position: fixed;
+    z-index: 999; /* Ensures the navbar is always on top */
 }
 .navbar-inner{
     display: flex;
@@ -132,6 +134,95 @@ body{
     cursor: pointer;
     margin: 0;
 }
+.banner{
+    margin: 125px auto 0;
+    width: 1120px;
+    display: flex;
+    justify-content: space-between;
+}
+.banner-main{
+    width: 660px;
+    height: 372px;
+    background-color: rgb(253, 240, 220);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 15px;
+    border: 1px solid rgb(133, 56, 54);
+    position: relative;
+    overflow: hidden;
+}
+.mbanner-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+.banner-text{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    width: 500px;
+    color: rgb(255, 255, 255);
+}
+.banner-text h2{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+.banner-text p{
+    font-size: 16px;
+    margin-top: 20px;
+}
+.right-banners{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 372px;
+    width: 430px;
+}
+.right-banner1, .right-banner2{
+    width: 430px;
+    height: 170px;
+    background-color: rgb(253, 240, 220);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 15px;
+    border: 1px solid rgb(133, 56, 54);
+    position: relative;
+    overflow: hidden;
+}
+.abanner1-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+.abanner2-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+.banner-text2{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    width: 240px;
+    color: rgb(255, 255, 255);
+}
+.banner-text2 h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+.banner-text2 p{
+    font-size: 16px;
+    margin-top: 20px;
+}
 .shop-categories h2{
     box-sizing: border-box;
     width: 1120px;
@@ -145,24 +236,11 @@ body{
     font-family: 'Inkia', monospace;
     font-weight: bold; 
     font-size: 24px;
-    margin: 125px auto 0;
+    margin: 40px auto 0;
     display: flex;
     align-items: center;
     padding-left: 25px;
-}
-.featured-products h2{
-    width: 1120px;
-    height: 50px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 30px;
-    background-color: rgb(86, 54, 46);
-    color: white;
-    margin: 25px auto 0;
-    display: flex;
-    align-items: center;
-    padding-left: 25px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
 .category-group{
     display: flex;
@@ -176,8 +254,14 @@ body{
     width: 200px;
     height: 80px;
     border-radius:  15px;
-    background-color: rgb(86, 54, 46);
+    border: 1px solid rgb(133, 56, 54);
+    background-color: rgb(133, 56, 54);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
     color: white;
+    font-weight:600;
     padding: 5px 5px;
     text-align: center;
     text-decoration: none;
@@ -187,7 +271,35 @@ body{
     font-size: 16px;
     cursor: pointer;
     margin-top: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+.section-title{
+    box-sizing: border-box;
+    width: 1120px;
+    height: 50px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 30px;
+    background-color: rgb(86, 54, 46);
+    color: white;
+    font-family: 'Inkia', monospace;
+    font-weight: bold; 
+    font-size: 24px;
+    margin: 40px auto 0;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+.product-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 1120px;
+    margin: 25px auto 0;
 }
 .product-card{
     width: 265px; 
@@ -200,7 +312,8 @@ body{
     flex-direction: column;
     justify-content: flex-start;
     align-items: left;
-    margin: 25px auto 0;
+    margin: 0px;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.3);
 }
 .product-img {
     display: block;
@@ -216,6 +329,7 @@ body{
     margin: 0;
 }  
 .product-title{
+    height: 40px;
     font-size: 16px;
     color: rgb(22, 36, 68);
     margin-top: 5px;
@@ -226,6 +340,14 @@ body{
 .stock{
     font-size: 13px;
     color: rgb(0, 168, 39);
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.pre-order{
+    font-size: 13px;
+    color: rgb(254, 0, 0);
     margin-top: 10px;
     margin-bottom: 5px;
     margin-left: 10px;
@@ -243,6 +365,7 @@ body{
 }
 .price{
     font-size: 20px;
+    font-weight: 600;
     color: rgb(22, 36, 68);
 }
 .card-icons{
@@ -268,31 +391,22 @@ body{
     border: none;                 
     border-radius: 15px;           
     cursor: pointer;             
-    text-align: center;           
+    text-align: center;      
+    text-decoration: none;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
 .visit-us{
+    box-sizing: border-box;  
     width: 1120px;
     height: 170px;
     background-color: rgb(253, 240, 220);
     color: rgb(22, 36, 68);
     border: 2px solid rgb(133, 56, 54);
     border-radius:  15px;
-    margin: 50px auto 25px;
+    padding: 25px;
+    margin: 40px auto 0;
 }
-.recent-restocks h2{
-    width: 1120px;
-    height: 50px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 30px;
-    background-color: rgb(86, 54, 46);
-    color: white;
-    margin: 25px auto 0;
-    display: flex;
-    align-items: center;
-    padding-left: 25px;
-}
+
 .why-us{
     display: flex;
     flex-direction: column;
@@ -305,7 +419,7 @@ body{
     color: rgb(22, 36, 68);
     border: 2px solid rgb(133, 56, 54);
     border-radius:  15px;
-    margin:0 auto;
+    margin:25px auto 40px;
 }
 .why-us *{
     margin: 0 auto;
