@@ -294,8 +294,8 @@ body{
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
 .product-grid {
-    display: flex;
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: repeat(4, 265px); /* 4 columns of 265px each */
     justify-content: space-between;
     align-items: center;
     width: 1120px;
