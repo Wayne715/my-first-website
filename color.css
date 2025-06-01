@@ -1,0 +1,6 @@
+.product-title {
+    color: rgb(22, 36, 68);
+}
+.product-title:hover {
+    color: rgb(46, 246, 249);
+}

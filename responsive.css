@@ -1,0 +1,371 @@
+@media (max-width: 1150px) {
+    h1 { font-size: 20px; }
+    h2 { font-size: 16px; }
+    h3 { font-size: 11px; }
+    p  { font-size: 10px; }
+
+    /* Below are up part for header */
+    .Heading{
+        width: 100%;
+        height: 40px;
+    }
+    .heading-inner {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: auto;
+        width: 360px;
+    }
+    .home-button img{
+        width: 175px;
+        height: auto;
+    }
+    .search-bar{          /* Search bar for desktop  will move to navbar*/
+        display: none;
+    }
+    .h-icons{
+        gap: 10px;
+    }
+    .h-icons img{
+        width: 25px;
+        height: 25px;
+    }
+/* Below are down part for header */
+    .navbar {
+        width: 100%;
+        height: 40px;
+        top: 40px;
+    }
+    .navbar-inner{
+        width: 360px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .btn-group{           /* below 2 wont show in mobile */
+        display: none;
+    }
+    .AGS {
+        display: none;
+    }
+    .search-bar2{           /* Search bar for desktop  will move to navbar*/
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 320px;
+        height: 25px;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 10px;
+        background-color: rgb(58, 46, 43);
+    }
+    .search-bar2 input{
+        box-sizing: border-box; 
+        width: 270px;
+        height: 25px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border: none;
+        padding-left: 10px;
+        background-color: rgb(86, 54, 46);
+        color: rgb(255, 255, 255);
+        font-size: 12px;
+    }
+    .search-bar2 input::placeholder {    /* Placeholder text becomes white */
+        color: rgb(255, 255, 255); 
+    }
+    .search-bar2 button{
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 25px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-left: 1px solid rgb(255, 255, 255);
+        background-color: rgb(133, 56, 54);
+        color: white;
+        cursor: pointer;
+    }
+    .search-bar2 button img{
+        height: 25px;
+        width: 25px;
+    }
+    .burger-button{           /* hide menu in 1 Burger button for mobile*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 25px;
+        height: 25px;
+    }
+    .burger-button img{
+        width: 25px;
+        height: 25px;
+    }
+    /* Below are Banner section */
+    .banner {        /* Below are Main Banner */
+        flex-direction: column;
+        width: 360px;
+        margin: 95px auto 0;
+    }
+    .banner-main{
+        width: 360px;
+        height: 203px;
+        margin: 0 auto;
+    }
+    .banner-text{
+        top: 20px;
+        left: 25px;
+        width: 330px;
+    }
+    .banner-text h2{
+        font-size: 16px;
+        margin: 0;
+    }
+    .banner-text p{
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .right-banners{    /* Below are Right Banners */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 65px;
+        width: 360px;
+        margin: 15px auto 0;
+    }
+    .right-banner1, .right-banner2{
+        width: 172.5px;
+        height: 68px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 40px;
+        border-bottom-left-radius: 15px;
+    }
+    .banner-text2{
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        width: 150px;
+    }
+    .banner-text2 h3{
+        font-size: 14px;
+        font-weight: 600;
+        margin: 0;
+    }
+    .banner-text2 p{
+        display: none;
+    }
+
+    /* Below are shop categories section */
+    .category-group{
+        width: 360px;
+        overflow-x: auto;         /* horizontal scroll */
+        flex-wrap: nowrap;        /* no wrap */
+        justify-content: flex-start;
+        scroll-snap-type: x mandatory;
+        gap: 10px;
+    }
+    .btns {
+        flex: 0 0 auto; /* prevent flex items from shrinking */
+        width: 135px;
+        height: 54px;
+        border-radius: 10px;
+        margin-top: 15px;
+        font-size: 14px;
+    }
+    .category-group::-webkit-scrollbar {             /* Below is used to hide scrollbar */
+        display: none;
+    }
+    .category-group {
+        -ms-overflow-style: none;  /* IE/Edge */
+        scrollbar-width: none;     /* Firefox */
+    }
+
+    /* Below are section-title */
+    .section-title{
+        width: 360px;
+        height: 35px;
+        font-size: 16px;
+        margin: 20px auto 0;
+    }
+    /* Below are product Card list section */
+    .product-grid {
+        width: 360px;
+        grid-template-columns: repeat(2, 184px);
+        justify-content: space-between;
+        align-items: center;
+        margin: 15px auto 0;
+    }
+    .product-card:nth-child(3),          /* Just show 2 cards on mobile */
+    .product-card:nth-child(4) {
+        display: none;
+    }
+    .product-card{
+        width: 172.25px; 
+        height: 243.75px;
+        border-radius: 10px;
+    }
+    .product-card img {
+        width: 100%;
+        height: 172.25px;
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px; 
+    }
+    .product-title{
+        height: 20px;
+        font-size: 12px;
+        margin-bottom: 4px;
+        margin-left: 5px;
+        margin-right: 5px;
+        white-space: nowrap;          /* only one line, 2 line dont have enough space */
+        overflow: hidden;             /* hide the overflow */
+        text-overflow: ellipsis;      /* add ellipsis */
+    }
+    .stock{
+        font-size: 10px;
+        margin-bottom: 1px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .pre-order{
+        font-size: 10px;
+        margin-bottom: 1px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .bottom-section{
+        height: 17px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+     .price{
+        height: 17px;
+        font-size: 14px;
+    }
+     .card-icons{
+        height: 17px;
+        gap: 7px;
+    }
+    .card-icons img{
+        height: 17px;
+    }
+    .btnv{
+        width:360px;
+        height: 35px;
+        font-size: 14px;
+        margin: 15px auto 0;
+    }
+
+
+    /* Below are up part for footer */
+    .footerup{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 75px;
+        background-color: rgb(86, 54, 46);
+        margin: 25px auto 0;
+    }
+    .footerup-inner{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+        width: 360px;
+        height: 75px;
+        background-color: rgb(86, 54, 46);
+        color: white;
+        margin: 0px auto;
+        padding: 10px 0;
+    }
+    /* Footer: Become A Member Of GD Games */
+    .footerup-inner h2{
+        font-size: 14px;
+        margin: 0;
+    }
+    .footerup-inner p{
+        display: none;
+        height: 0;
+        margin: 0;
+        padding: 0;
+    }
+    /* The bar to input email(only) */
+    .email-subscription{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 360px;
+        height: 22px;
+        border-radius: 10px;
+        background-color: rgb(253, 240, 220);
+        margin: 0;
+    }
+    .email-subscription input{
+        box-sizing: border-box;
+        width: 290px;
+        height: 22px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border: none;
+        background-color: rgb(253, 240, 220);
+        color: rgb(0, 0, 0);
+        font-size: 12px;
+        margin: 0;
+    }
+    .email-subscription button{
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70px;
+        height: 22px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border: 1px solid rgb(133, 56, 54);
+        background-color: rgb(133, 56, 54);
+        color: white;
+        font-size: 12px;
+        cursor: pointer;
+        margin: 0;
+    }
+    /* Below are down part for footer */
+    .footerdown{
+        height: 320px;
+    }
+    .footerdown-inner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 15px;
+    width: 360px;
+    height: 320px;
+    align-content: start;
+    }
+    .FAQ{
+        height: 130px;
+    }
+    .FAQ h2{
+        font-size: 14px;
+        margin: 0 10px 3px;
+    }
+    .FAQ p{
+        font-size: 12px;
+        margin: 4px 10px 0;
+    }
+    .FAQ img{
+        margin: 4px 10px 0;
+        width: 150px;
+    }
+}

@@ -134,6 +134,9 @@ body{
     cursor: pointer;
     margin: 0;
 }
+.search-bar2, .burger-button{
+    display: none;
+}
 .banner{
     margin: 125px auto 0;
     width: 1120px;
@@ -223,25 +226,6 @@ body{
     font-size: 16px;
     margin-top: 20px;
 }
-.shop-categories h2{
-    box-sizing: border-box;
-    width: 1120px;
-    height: 50px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 30px;
-    background-color: rgb(86, 54, 46);
-    color: white;
-    font-family: 'Inkia', monospace;
-    font-weight: bold; 
-    font-size: 24px;
-    margin: 40px auto 0;
-    display: flex;
-    align-items: center;
-    padding-left: 25px;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-}
 .category-group{
     display: flex;
     flex-wrap: wrap;
@@ -260,7 +244,6 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     overflow: hidden;
-    color: white;
     font-weight:600;
     padding: 5px 5px;
     text-align: center;
@@ -272,6 +255,7 @@ body{
     cursor: pointer;
     margin-top: 25px;
     margin-bottom: 0px;
+    color: white;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
 .section-title{
@@ -319,6 +303,7 @@ body{
     display: block;
     width: 100%;
     height: 265px;
+    background-color: black;
     object-fit: cover;
     object-position: top;
     border-bottom: 1px solid rgb(133, 56, 54);
@@ -329,9 +314,11 @@ body{
     margin: 0;
 }  
 .product-title{
-    height: 40px;
-    font-size: 16px;
-    color: rgb(22, 36, 68);
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    overflow: hidden;
+    height: 50px;
     margin-top: 5px;
     margin-bottom: 10px;
     margin-left: 10px;
@@ -340,7 +327,7 @@ body{
 .stock{
     font-size: 13px;
     color: rgb(0, 168, 39);
-    margin-top: 10px;
+    margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 10px;
     margin-right: 10px;
@@ -348,7 +335,7 @@ body{
 .pre-order{
     font-size: 13px;
     color: rgb(254, 0, 0);
-    margin-top: 10px;
+    margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 10px;
     margin-right: 10px;
@@ -397,7 +384,7 @@ body{
 }
 .visit-us{
     box-sizing: border-box;  
-    width: 1120px;
+    width: 1368px;
     height: 170px;
     background-color: rgb(253, 240, 220);
     color: rgb(22, 36, 68);
@@ -448,13 +435,7 @@ body{
 .footerup-inner p{
     font-size: 14px;
 }
-.footerdown{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 220px;
-    background-color: rgb(75, 75, 75);
-}
+
 .email-subscription{
     display: flex;
     align-items: center;
@@ -495,22 +476,30 @@ body{
     color: white;
     cursor: pointer;
 }
-.footerdown-inner{
+.footerdown{
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 220px;
+    background-color: rgb(75, 75, 75);
+}
+.footerdown-inner{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
     width: 1120px;
     height: 220px;
     background-color: rgb(75, 75, 75);
     color: white;
-    margin: 25px auto;
+    margin: 0 auto;
+    padding: 15px 0;
 }
 .FAQ{
     display: flex;
     flex-direction: column;
-    width: 250px;
+    width: 100%;
     height: 190px;
-    margin-top: 15px;
     border-left: 2px solid rgb(255, 255, 255);
 }
 .FAQ h2{
