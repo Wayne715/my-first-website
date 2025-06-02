@@ -197,7 +197,7 @@
     /* Below are product Card list section */
     .product-grid {
         width: 360px;
-        grid-template-columns: repeat(2, 184px);
+        grid-template-columns: repeat(2, 172.25px);
         justify-content: space-between;
         align-items: center;
         margin: 15px auto 0;
@@ -262,7 +262,78 @@
         font-size: 14px;
         margin: 15px auto 0;
     }
+   
+    .visit-us{
+        width: 360px;
+        height: 90px;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 20px auto 0;
+    }
+    .visit-us h2{
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0;
+    }
+    .located{
+        font-size: 12px;
+        font-weight: 600;
+        margin: 5px 0 0;
+    }
+    .pickup-times{
+        display: none; 
+    }
+     /* Below are review section */
+    .feedbacks-grid{
+        display: grid;
+        grid-template-columns: repeat(1, 360px); /* 1 column of 360px */
+        height: auto;
+        width: 360px;
+        gap: 10px;
+        margin: 15px auto 0;
+    }
+    .feedback-card{
+        box-sizing: border-box;
+        height: 100px;
+        width: 360px;
+        justify-content: start;
+        gap: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    .platform-logo{
+        width: 70px;
+        height: 70px;
+    }
+    .feedback-description{
+        height: 70px;
+    }
+    .Platform{
+        font-size: 16px;
+    }
+    .star-rating{
+        width: auto;
+        height: 18px;
+    }
+    .Review-stars{
+        font-size: 14px;
+        font-weight: 400;
+    }
 
+    /* Below are whyus section */
+    .why-us{
+        width: 360px;
+        height: 110px;
+        border-radius: 10px;
+        padding: 10px;
+        gap: 5px;
+        margin: 20px auto 0;
+    }
+    .why-us ul{
+       display: none;
+    }
 
     /* Below are up part for footer */
     .footerup{
@@ -368,4 +439,27 @@
         margin: 4px 10px 0;
         width: 150px;
     }
+/*below are for searchresult page*/
+    .product-grid2 {
+        width: 360px;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 172.25px);
+        gap: 15px;
+        align-items: center;
+        margin: 15px auto 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
