@@ -1,3 +1,52 @@
+body{
+    background-color: rgb(253, 233, 201);
+}
+.Heading{
+    background-color: rgb(58, 46, 43);
+}
+.heading-inner{
+    background-color: rgb(58, 46, 43);
+}
+.search-bar{
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(58, 46, 43);
+    color: rgb(212,212,212);
+}
+.search-bar input{
+    background-color: rgb(58, 46, 43);
+    color: rgb(212,212,212);
+    border: none;
+}
+.search-bar button{
+    border-left: 1px solid rgb(255, 255, 255);
+    background-color: rgb(133, 56, 54);
+    color: white;
+}
+.navbar{
+    background-color: rgb(86, 54, 46);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+.navbar-inner{
+    background-color: rgb(86, 54, 46);
+}
+.AGS{                        /* Australia gaming store */
+    color: white;
+}
+.btnc{                      /* Button for nav bar categories */
+    background-color: rgb(86, 54, 46);
+    color: white;
+}
+.banner-main{
+    background-color: rgb(253, 240, 220);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgb(133, 56, 54);
+}
+.banner-text{
+    color: rgb(255, 255, 255);
+}
+
+
+
 .product-title {
     color: rgb(22, 36, 68);
 }
