@@ -193,6 +193,7 @@
         height: 35px;
         font-size: 16px;
         margin: 20px auto 0;
+        padding-left: 20px;
     }
     /* Below are product Card list section */
     .product-grid {
@@ -416,13 +417,13 @@
         height: 320px;
     }
     .footerdown-inner{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 20px;
-    row-gap: 15px;
-    width: 360px;
-    height: 320px;
-    align-content: start;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        row-gap: 15px;
+        width: 360px;
+        height: 320px;
+        align-content: start;
     }
     .FAQ{
         height: 130px;
@@ -439,7 +440,53 @@
         margin: 4px 10px 0;
         width: 150px;
     }
+
 /*below are for searchresult page*/
+    .status{
+        margin: 80px auto 0;
+        width: 360px;
+        height: 30px;
+        padding: 0;
+    }
+    .status h2{
+        margin: 0;
+        font-size: 14px;
+    }
+    .summary{
+        width: 360px;
+        height: 35px;
+        margin: 15px auto 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .summary h2{
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0;
+    }
+    .summary h3{
+        font-size: 14px;
+        font-weight: 500;
+        margin: 0;
+    }
+    .Classification-button{
+        width: 360px;
+        margin: 15px auto 0;
+    }
+    .btn-classification{         
+        gap: 5px;                   /* Space between icon and text */
+        height: 35px;
+        width: 172.25px;
+        border-radius: 10px;
+    }
+    .btn-classification span{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .btn-classification img{
+        width: 20px;
+        height: 20px;
+    }
     .product-grid2 {
         width: 360px;
         height: auto;
@@ -450,6 +497,30 @@
         margin: 15px auto 0;
     }
 
+    .pagebar{
+    width: 360px;
+    height: 35px;
+    border-radius: 10px;
+    margin: 15px auto 0;
+    padding-left: 20px;
+    padding-right: 20px;;
+    }
+.pagebtn{
+    width: 35px;
+    height: 35px;
+}
+.pagebtn img{
+    width: 20px;
+    height: 20px;
+}   
+.pagebar span{
+    font-size: 14px;
+    font-weight: 500;
+}
+.pagebar p{
+    font-size: 16px;
+    font-weight: 500;
+}
 
 
 
