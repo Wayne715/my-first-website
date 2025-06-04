@@ -1267,6 +1267,9 @@ body{
 .description-info{
     margin: 0;
 }
+.highlight{
+    font-weight: 600;
+}
 .review-box{
     box-sizing: border-box;
     padding: 25px;
