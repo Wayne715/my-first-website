@@ -704,7 +704,7 @@ body{
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 30px;
     background-color: rgb(86, 54, 46);
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: 600; 
     font-size: 24px;
     margin: 25px auto 0;
@@ -829,6 +829,7 @@ body{
     background-color: rgb(133, 56, 54);
     border: none;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 .price-total{
     display: flex;
@@ -872,9 +873,10 @@ body{
 
 /* Below is for confirmation page */
 .confirmation{
+    box-sizing: border-box;
     margin: 125px auto 0;
     width: 1120px;
-    height: 700px;
+    height: 750px;
     padding: 25px;
     display: flex;
     flex-direction: column;
@@ -970,9 +972,332 @@ body{
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
     border: none;
     border-radius: 15px;
-    margin: 50px auto 0;
+    margin: 40px auto 0;
     font-weight: 600;
     font-size: 20px;
     text-decoration: none;
     cursor: pointer;
+}
+
+/* Below is for product page */
+.productd-grid{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns of equal width */
+    gap: 30px;
+    width: 1120px;
+    margin: 25px auto 0;
+}
+.image-pics{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 25px;
+    padding: 25px;
+    width: 545px;
+    height: auto;
+    border-radius: 15px;
+    border: 2px solid rgb(133, 56, 54);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+    background-color: rgb(253, 240, 220);
+}
+.cover-image{
+    height: 500px;
+    width: auto;
+    border-radius: 15px;
+    border: 2px solid rgb(133, 56, 54);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+.other-pics{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    height: 500px;
+    width: 80px;
+}
+.op-box{
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 2px solid rgb(133, 56, 54);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+.other-pic-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.aside-info{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:flex-start;
+    gap: 20px;
+    width: 545px;
+    margin: 0;
+}
+.box-up{
+    box-sizing: border-box;
+    padding: 25px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 15px;
+    border: 2px solid rgb(133, 56, 54);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+    background-color: rgb(253, 240, 220);
+    color: rgb(22, 36, 68);
+}
+.p-name{
+    height: 30px;
+    width: 400px;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    border-bottom: 2px solid rgb(133, 56, 54);
+}
+.tags{
+    height: 25px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.tag-box{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    padding: 0 10px;
+    border-radius: 10px;
+    background-color: rgb(22, 36, 68);
+    color: rgb(255, 255, 255);
+    margin: 0;
+}
+.tag-box span{
+    font-size: 14px;
+    font-weight: 500;
+}
+.l-label{
+    width: 400px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    color: rgb(22, 36, 68);
+    margin:0;
+    padding: 0;
+}
+.l-price{
+    width: 400px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1;
+    color: rgb(22, 36, 68);
+    margin: 0;
+    padding: 0;
+}
+.l-label2{
+    width: 400px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    color: rgb(22, 36, 68);
+    margin:0;
+    padding: 10px 0 0;
+}
+.quantity-selector{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 400px;
+    margin:0;
+}
+.quantity-button{
+    height: 25px;
+    width: 25px;
+}
+.quantity-display{
+    height: 25px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(133, 56, 54);
+}
+.quantity-display p{
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(22, 36, 68);
+}
+/*below is button*/
+.add-to{
+    height: 40px;
+    width: 545px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: rgb(133, 56, 54);
+    border: none;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+.add-to span{
+    font-family: 'Source Serif 4', serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+.A-T{
+    height: 30px;
+    width: 30px;
+}
+.aside-info h2{
+    box-sizing: border-box;
+    width: 545px;
+    height: 50px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 30px;
+    background-color: rgb(86, 54, 46);
+    color: white;
+    font-weight: 600; 
+    font-size: 24px;
+    margin: 5px auto 0;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+.reasons-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 265px); /* 2 columns of equal width */
+    gap: 10px; /* Space between items */
+    justify-content: center;
+    align-items: center;
+    width: 545px;
+    margin: 0;
+}
+.reason-box{
+    box-sizing: border-box;
+    padding: 10px 0px 10px 25px;
+    height: 40px;
+    width: 265px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 15px;
+    border-radius: 15px;
+    border: 2px solid rgb(133, 56, 54);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+    background-color: rgb(253, 240, 220);
+}
+.reason-box img{
+    width: 30px;
+    height: 30px;
+}
+.reason-box p{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(22, 36, 68);
+}
+/* Below is for section 2: Shipping */
+.shipping-info-box {
+    box-sizing: border-box;
+    padding-left: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 1120px;
+    height: 90px;
+    margin: 25px auto 0;
+    border-radius: 15px;
+    border: 2px solid rgb(133, 56, 54);
+    background-color: rgb(253, 240, 220);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+    color: rgb(22, 36, 68);
+}
+.shipping-info{
+    font-size: 16px;
+    font-weight: 600;
+}
+.description-info-box{
+    box-sizing: border-box;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 25px;
+    padding-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    width: 1120px;
+    height: auto;
+    margin: 25px auto 0;
+    border-radius: 15px;
+    border: 2px solid rgb(133, 56, 54);
+    background-color: rgb(253, 240, 220);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+.description-info{
+    margin: 0;
+}
+.review-box{
+    box-sizing: border-box;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:space-between;
+    width: 1120px;
+    height: 150px;
+    margin: 25px auto 0;
+    border-radius: 15px;
+    border: 2px solid rgb(133, 56, 54);
+    background-color: rgb(253, 240, 220);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+.review-input{
+    color: rgb(75, 75, 75);
+    line-height: 1;
+    margin: 0;
+}
+.review-button{
+    margin-left: auto;
+    height: 30px;
+    width: 170px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(133, 56, 54);
+    color: white;
+    border: none;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+    font-family: 'Source Serif 4', serif;
+    font-size: 14px;
+    font-weight: 600;
 }
