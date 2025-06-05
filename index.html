@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GD Games Homepage</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="typography.css">
-    <link rel="stylesheet" href="color.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+    <script src="main.js" defer></script>
 </head>
 <body>
     <header>
@@ -21,8 +20,8 @@
                  <img src="website-pic/GDG.png" alt="GD Games Logo">
              </a>
              <div class="search-bar">
-                 <input type="text" placeholder="Search for Products...">
-                 <button type="submit">
+                 <input type="text" id="searchInput" placeholder="Search for Products...">
+                 <button type="submit" id="searchBtn">
                     <img src="website-icons/search.png" alt="Search">
                 </button>
              </div>
@@ -51,8 +50,8 @@
              </div>
              <h2 class="AGS">Australia's Gaming Store</h2>
              <div class="search-bar2">
-                 <input type="text" placeholder="Search for Products...">
-                 <button type="submit">
+                 <input type="text" id="searchInput2" placeholder="Search for Products...">
+                 <button type="submit" id="searchBtn2">
                     <img src="website-icons/search.png" alt="Search">
                 </button>
              </div>
@@ -313,8 +312,8 @@
                  <h2>Become A Member Of GD Games</h2>
                  <p>We will keep you up-to-date with the latest news.</p>
                  <div class="email-subscription">
-                     <input type="email" placeholder="Enter your email address">
-                     <button type="submit">Subscribe</button>
+                     <input type="email" id="emailInput" placeholder="Enter your email address">
+                     <button type="submit" id="subscribeBtn">Subscribe</button>
                  </div>
             </div>
         </section>

@@ -1,3 +1,6 @@
+@import url("color.css");
+@import url("layout.css");
+@import url("typography.css");
 body{
     margin: 0;
     padding: 0;
@@ -507,6 +510,11 @@ body{
     background-color: rgb(253, 240, 220);
     color: rgb(0, 0, 0);
     font-size: 16px;
+}
+.email-subscription input.error::placeholder {
+      color:rgb(170, 72, 69);
+      font-style: italic;
+      opacity: 1;
 }
 .email-subscription button{
     box-sizing: border-box;
