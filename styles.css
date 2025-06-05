@@ -1173,7 +1173,7 @@ body{
     height: 30px;
     width: 30px;
 }
-.aside-info h2{
+.aside-info h2{                 /*below is reason section*/
     box-sizing: border-box;
     width: 545px;
     height: 50px;
@@ -1345,6 +1345,7 @@ body{
 .boxstyle1 input{
     box-sizing: border-box;
     width: 495px;
+    height: 40px;
     padding: 10px;
     border: 2px solid rgb(133, 56, 54);
     border-radius: 10px;
@@ -1506,6 +1507,39 @@ body{
     font-size: 16px;
     font-weight: 600;
     color: rgb(22, 36, 68);
+}
+.discount-code{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    margin-top: 15px;
+}
+.discount-code input{
+    box-sizing: border-box;
+    width: 280px;
+    height: 30px;
+    padding: 10px;
+    border: 2px solid rgb(133, 56, 54);
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(22, 36, 68);
+}
+.discount-code button{
+    width: 140px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(133, 56, 54);
+    color: white;
+    cursor: pointer;
+    font-family: 'Source Serif 4', serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+.discount-code input::placeholder{
+    font-family: 'Source Serif 4', serif;
 }
 .summary1{
     display: flex;
