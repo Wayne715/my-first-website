@@ -11,18 +11,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+    <script src="main.js" defer></script>
 </head>
 <body>
     <header>
     <!-- Fixed logo and search bar -->
     <div class="Heading">
         <div class="heading-inner">
-             <a href="index.html" class="home-button">
+             <a href="#" class="home-button">
                  <img src="website-pic/GDG.png" alt="GD Games Logo">
              </a>
              <div class="search-bar">
-                 <input type="text" placeholder="Search for Products...">
-                 <button type="submit">
+                 <input type="text" id="searchInput" placeholder="Search for Products...">
+                 <button type="submit" id="searchBtn">
                     <img src="website-icons/search.png" alt="Search">
                 </button>
              </div>
@@ -51,8 +52,8 @@
              </div>
              <h2 class="AGS">Australia's Gaming Store</h2>
              <div class="search-bar2">
-                 <input type="text" placeholder="Search for Products...">
-                 <button type="submit">
+                 <input type="text" id="searchInput2" placeholder="Search for Products...">
+                 <button type="submit" id="searchBtn2">
                     <img src="website-icons/search.png" alt="Search">
                 </button>
              </div>
@@ -84,18 +85,18 @@
             </section>
             <section class="boxstyle1">
                 <h2>Shipping Address</h2>
-                <input type="text" placeholder="Country/Region">
+                <input type="text" id="country" data-type="country" data-placeholder="Country/Region" placeholder="Country/Region">
                 <div class="twoin-line">
-                    <input type="text" placeholder="First Name">
-                    <input type="text" placeholder="Last Name">
+                    <input type="text" id="firstName" data-type="name" data-placeholder="First Name" placeholder="First Name">
+                    <input type="text" id="lastName" data-type="name" data-placeholder="Last Name" placeholder="Last Name">
                 </div>
                 <input type="text" placeholder="Company (optional)">
-                <input type="text" placeholder="Address">
+                <input type="text" id="address" data-type="address" data-placeholder="Address" placeholder="Address">
                 <input type="text" placeholder="Building, suit,  etc. (optional)">
                 <div class="threein-line">
-                    <input type="text" placeholder="City">
-                    <input type="text" placeholder="State">
-                    <input type="text" placeholder="Postcode">
+                    <input type="text" id="city" data-type="city" data-placeholder="City" placeholder="City">
+                    <input type="text" id="state" data-type="state" data-placeholder="State" placeholder="State">
+                    <input type="text" id="postcode" data-type="postcode" data-placeholder="Postcode" placeholder="Postcode">
                 </div>
             </section>
             <section class="boxstyle1">
@@ -115,12 +116,12 @@
                         <img src="website-icons/checked2.png" class="checked2" alt="Checked Icon">
                         <h3>Credit Card</h3>
                 </div>
-                <input type="text" placeholder="Card Number">
+                <input type="text" id="cardNumber" data-type="card" data-placeholder="Card Number" placeholder="Card Number">
                 <div class="twoin-line">
-                    <input type="text" placeholder="Expiration Date (MM/YY)">
-                    <input type="password" placeholder="CVV">
+                    <input type="text" id="expirationDate" data-type="expiry" data-placeholder="Expiration Date (MM/YY)" placeholder="Expiration Date (MM/YY)">
+                    <input type="password" id="cvv" data-type="cvv" data-placeholder="CVV" placeholder="CVV">
                 </div>
-                <input type="text" placeholder="Name On Card">
+                <input type="text" id="nameOnCard" data-type="name" data-placeholder="Name On Card" placeholder="Name On Card">
                 <div class="notice">
                         <img src="website-icons/checkbox.png" class="checkedbox" alt="Checkbox Icon">
                         <p>Use shipping address as billing address</p>
@@ -182,7 +183,7 @@
         </div>
     </div>
     <section class="confirm-pay">
-        <button class="pay-button">Confirm & Pay</button>
+        <button class="pay-button" id="confirmPayBtn">Confirm & Pay</button>
     </section>
     </main>
     <footer>
@@ -192,8 +193,8 @@
                  <h2>Become A Member Of GD Games</h2>
                  <p>We will keep you up-to-date with the latest news.</p>
                  <div class="email-subscription">
-                     <input type="email" placeholder="Enter your email address">
-                     <button type="submit">Subscribe</button>
+                     <input type="email" id="emailInput" placeholder="Enter your email address">
+                     <button type="submit" id="subscribeBtn">Subscribe</button>
                  </div>
             </div>
         </section>

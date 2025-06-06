@@ -1,5 +1,4 @@
 @import url("color.css");
-@import url("layout.css");
 @import url("typography.css");
 body{
     margin: 0;
@@ -1363,6 +1362,13 @@ body{
 .boxstyle1 input::placeholder{
     font-family: 'Source Serif 4', serif;
 }
+
+input.error::placeholder {                   /* Placeholder for error state */
+    color: rgb(193, 57, 52);
+    font-style: italic;
+    opacity: 1;
+}
+
 
 .express-options{
     display: flex;
