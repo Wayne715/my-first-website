@@ -118,6 +118,9 @@ body{
 .search-bar2, .burger-button{
     display: none;
 }
+.burger-menu{
+    display: none;
+}
 .banner{
     margin: 125px auto 0;
     width: 1120px;

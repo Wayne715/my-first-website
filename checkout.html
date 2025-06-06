@@ -18,7 +18,7 @@
     <!-- Fixed logo and search bar -->
     <div class="Heading">
         <div class="heading-inner">
-             <a href="#" class="home-button">
+             <a href="index.html" class="home-button">
                  <img src="website-pic/GDG.png" alt="GD Games Logo">
              </a>
              <div class="search-bar">
@@ -57,9 +57,26 @@
                     <img src="website-icons/search.png" alt="Search">
                 </button>
              </div>
-             <a href="#" class="burger-button">
-                 <img src="website-icons/burger.png" alt="menu">
-             </a>
+             <button class="burger-button">
+                 <img src="website-icons/burger.png" alt="menu" id="burgerBtn">
+             </button>
+        </div>
+    </div>
+    <div class="burger-menu" id="burgerMenu">
+        <div class="bmbox">
+            <a href="#" class="btnc">Nintendo Switch Games</a>
+        </div>
+        <div class="bmbox">
+            <a href="#" class="btnc">PlayStation Games</a>
+        </div>
+        <div class="bmbox">
+            <a href="#" class="btnc">Xbox Games</a>
+        </div>
+        <div class="bmbox">
+            <a href="#" class="btnc">Pokemon</a>
+        </div>
+        <div class="bmbox">
+            <a href="#" class="btnc">Yugioh</a>
         </div>
     </div>
     </header>
@@ -116,7 +133,7 @@
                         <img src="website-icons/checked2.png" class="checked2" alt="Checked Icon">
                         <h3>Credit Card</h3>
                 </div>
-                <input type="text" id="cardNumber" data-type="card" data-placeholder="Card Number" placeholder="Card Number">
+                <input type="text" id="cardNumber" data-type="card" data-placeholder="Card Number" placeholder="Card Number(16 digits)">
                 <div class="twoin-line">
                     <input type="text" id="expirationDate" data-type="expiry" data-placeholder="Expiration Date (MM/YY)" placeholder="Expiration Date (MM/YY)">
                     <input type="password" id="cvv" data-type="cvv" data-placeholder="CVV" placeholder="CVV">

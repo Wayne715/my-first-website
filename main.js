@@ -18,6 +18,20 @@ document.getElementById("searchBtn2").addEventListener("click", function(event) 
     }
 });
 
+
+//this is for responsived burger menu hide/show//
+document.addEventListener("DOMContentLoaded", function() {
+    const burger = document.getElementById("burgerBtn");
+    const menu = document.getElementById("burgerMenu");
+
+    burger.addEventListener("click", function() {
+        menu.classList.toggle("show");
+    });
+
+});
+
+
+
 //this is for verify user input data is email or not,can be used in footer//
 const input = document.getElementById("emailInput");
 const button = document.getElementById("subscribeBtn");
@@ -39,6 +53,16 @@ input.addEventListener("focus", function () {                //when user click o
     input.placeholder = "Enter your email address";
     input.classList.remove("error"); // Remove error class on focus
 });
+
+
+
+
+
+
+
+
+
+
 
 
 //this is for verify user input in checkout page//
