@@ -165,13 +165,10 @@ body{
 .right-banner1, .right-banner2{
     width: 430px;
     height: 170px;
-    background-color: rgb(253, 240, 220);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 50px;
     border-bottom-left-radius: 15px;
-    border: 1px solid rgb(133, 56, 54);
     position: relative;
     overflow: hidden;
 }
@@ -192,16 +189,6 @@ body{
     top: 20px;
     left: 30px;
     width: 240px;
-    color: rgb(255, 255, 255);
-}
-.banner-text2 h3{
-    font-size: 20px;
-    font-weight: bold;
-    margin: 0;
-}
-.banner-text2 p{
-    font-size: 16px;
-    margin-top: 20px;
 }
 .category-group{
     display: flex;
@@ -215,20 +202,14 @@ body{
     width: 200px;
     height: 80px;
     border-radius:  15px;
-    border: 1px solid rgb(133, 56, 54);
-    background-color: rgb(133, 56, 54);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     overflow: hidden;
-    font-weight:600;
     padding: 5px 5px;
-    text-align: center;
-    text-decoration: none;
     display: flex;                  
     align-items: center;           
     justify-content: center;
-    font-size: 16px;
     cursor: pointer;
     margin-top: 25px;
     margin-bottom: 0px;
@@ -243,15 +224,10 @@ body{
     border-top-right-radius: 30px;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 30px;
-    background-color: rgb(86, 54, 46);
-    color: white;
-    font-weight: 600; 
-    font-size: 24px;
     margin: 40px auto 0;
     display: flex;
     align-items: center;
     padding-left: 25px;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
 .product-grid {
     display: grid;
@@ -265,24 +241,19 @@ body{
     width: 265px; 
     height: 375px;
     border-radius: 15px;
-    background-color: rgb(253, 240, 220);
-    border: 1px solid rgb(133, 56, 54);
     padding-bottom: 10px;
     display: flex;              
     flex-direction: column;
     justify-content: flex-start;
     align-items: left;
     margin: 0px;
-    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.3);
 }
 .product-img {
     display: block;
     width: 100%;
     height: 265px;
-    background-color: black;
     object-fit: cover;
     object-position: top;
-    border-bottom: 1px solid rgb(133, 56, 54);
     border-top-left-radius: 15px;
     border-top-right-radius: 15px; 
     border-bottom-right-radius: 0px;
@@ -290,9 +261,6 @@ body{
     margin: 0;
 }  
 .product-title{
-    font-size: 16px;
-    font-weight: 600;
-    text-decoration: none;
     overflow: hidden;
     height: 50px;
     margin-top: 5px;
@@ -301,16 +269,12 @@ body{
     margin-right: 10px;
 }
 .stock{
-    font-size: 13px;
-    color: rgb(0, 168, 39);
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 10px;
     margin-right: 10px;
 }
 .pre-order{
-    font-size: 13px;
-    color: rgb(254, 0, 0);
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 10px;
@@ -324,12 +288,6 @@ body{
     margin-top: auto;
     margin-left: 10px;
     margin-right: 10px;
-    background-color: rgb(253, 240, 220);
-}
-.price{
-    font-size: 20px;
-    font-weight: 600;
-    color: rgb(22, 36, 68);
 }
 .card-icons{
     display: flex;
@@ -347,16 +305,10 @@ body{
     display: block;
     margin: 30px auto 0;
     width: 550px;
-    height: 40px;
-    background-color: rgb(133, 56, 54);        
-    color: white;                
-    font-size: 16px;              
+    height: 40px;              
     border: none;                 
     border-radius: 15px;           
     cursor: pointer;             
-    text-align: center;      
-    text-decoration: none;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
 .visit-us{
     box-sizing: border-box; 
@@ -365,29 +317,18 @@ body{
     justify-content: flex-start; 
     width: 1120px;
     height: 165px;
-    background-color: rgb(253, 240, 220);
-    color: rgb(22, 36, 68);
-    border: 2px solid rgb(133, 56, 54);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
     border-radius:  15px;
     padding: 25px;
     margin: 40px auto 0;
 }
 .visit-us h2{
-    font-size: 24px;
-    font-weight: 700;
     margin: 0;
 }
 .located{
-    font-size: 20px;
-    font-weight: 600;
     margin: 10px 0 0;
 }
 .pickup-times{
-    font-size: 20px;
-    font-weight: 600;
-    margin: 10px 0 0;
-    text-align: right; 
+    margin: 10px 0 0;; 
 }
 .feedbacks-grid{
     display: grid;
@@ -408,9 +349,6 @@ body{
     gap: 10px;
     padding: 20px;
     border-radius: 15px;
-    border: 2px solid rgb(133, 56, 54);
-    background-color: rgb(253, 240, 220);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
 .platform-logo{
     width: 80px;
@@ -425,9 +363,6 @@ body{
 }
 .Platform{
     margin: 0;
-    font-size: 20px;
-    font-weight: 600;
-    color: rgb(22, 36, 68);
 }
 .star-rating{
     width: auto;
@@ -435,9 +370,6 @@ body{
 }
 .Review-stars{
     margin: 0;
-    font-size: 16px;
-    font-weight: 400;
-    color: rgb(22, 36, 68);
 }
 .why-us{
     box-sizing: border-box;
@@ -449,25 +381,17 @@ body{
     width: 1120px;
     height: 290px;
     padding: 20px;
-    background-color: rgb(253, 240, 220);
-    color: rgb(22, 36, 68);
-    border: 2px solid rgb(133, 56, 54);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
     border-radius:  15px;
     margin:25px auto 40px;
 }
 .why-us h2,h3,ul{
     margin: 0;
 }
-.why-us h3{
-    text-align: center;
-}
 .footerup{
     display: flex;
     align-items: center;
     width: 100%;
     height: 70px;
-    background-color: rgb(86, 54, 46);
     margin: 50px auto 0;
 }
 .footerup-inner{
@@ -476,17 +400,7 @@ body{
     justify-content: space-between;
     width: 1120px;
     height: 70px;
-    background-color: rgb(86, 54, 46);
-    color: white;
     margin: 0 auto;
-}
-.footerup-inner h2{
-    font-size: 20px;
-    font-weight: 600;
-}
-.footerup-inner p{
-    font-size: 14px;
-    font-weight: 500;
 }
 
 .email-subscription{
@@ -496,8 +410,6 @@ body{
     width: 400px;
     height: 30px;
     border-radius: 10px;
-    background-color: rgb(253, 240, 220);
-    color: rgb(0, 0, 0);
 }
 .email-subscription input{
     box-sizing: border-box;
@@ -509,15 +421,8 @@ body{
     border-bottom-right-radius: 0px;
     border: none;
     padding-left: 10px;
-    background-color: rgb(253, 240, 220);
-    color: rgb(0, 0, 0);
-    font-size: 16px;
 }
-.email-subscription input.error::placeholder {
-      color:rgb(170, 72, 69);
-      font-style: italic;
-      opacity: 1;
-}
+
 .email-subscription button{
     box-sizing: border-box;
     display: flex;
@@ -529,9 +434,6 @@ body{
     border-bottom-left-radius: 0;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    border: 1px solid rgb(133, 56, 54);
-    background-color: rgb(133, 56, 54);
-    color: white;
     cursor: pointer;
 }
 .footerdown{
@@ -539,7 +441,6 @@ body{
     align-items: center;
     width: 100%;
     height: 220px;
-    background-color: rgb(75, 75, 75);
 }
 .footerdown-inner{
     box-sizing: border-box;
@@ -548,8 +449,6 @@ body{
     gap: 20px;
     width: 1120px;
     height: 220px;
-    background-color: rgb(75, 75, 75);
-    color: white;
     margin: 0 auto;
     padding: 15px 0;
 }
@@ -558,17 +457,12 @@ body{
     flex-direction: column;
     width: 100%;
     height: 190px;
-    border-left: 2px solid rgb(255, 255, 255);
 }
 .FAQ h2{
-    font-size: 20px;
     margin: 0 10px 5px;
-    font-weight: 600;
 }
 .FAQ p{
-    font-size: 16px;
     margin: 6px 10px 0;
-    font-weight: 500;
 }
 .FAQ img{
     margin: 6px 10px 0;
@@ -585,13 +479,9 @@ body{
     padding: 0;
     display: flex;
     align-items: center;
-    border-bottom: 2px solid rgb(133, 56, 54);
 }
 .status h2{
     margin: 0;
-    font-size: 20px;
-    font-weight: 500;
-    color: rgb(133, 56, 54);
 }
 .summary{
     box-sizing: border-box;
@@ -601,8 +491,6 @@ body{
     border-top-right-radius: 30px;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 30px;
-    background-color: rgb(86, 54, 46);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
     margin: 25px auto 0;
     display: flex;
     align-items: center;
@@ -611,15 +499,9 @@ body{
     padding-right: 25px;
 }
 .summary h2{
-    font-size: 24px;
-    font-weight: 600;
-    color: rgb(253, 233, 201);
     margin: 0;
 }
 .summary h3{
-    font-size: 20px;
-    font-weight: 500;
-    color: rgb(253, 233, 201);
     margin: 0;
 }
 .Classification-button{
@@ -640,15 +522,7 @@ body{
     width: 265px;
     border-radius: 15px;
     border: none;
-    background-color: rgb(133, 56, 54);
-    color: white;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
     cursor: pointer;
-}
-.btn-classification span{
-    font-family: 'Source Serif 4', serif;
-    font-size: 20px;
-    font-weight: 500;
 }
 .btn-classification img{
     width: 25px;
@@ -676,9 +550,6 @@ body{
     margin: 25px auto 0;
     padding-left: 25px;
     padding-right: 25px;
-    background-color: rgb(133, 56, 54);
-    color: white;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
 .pagebtn{
     width: 40px;
@@ -686,23 +557,12 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(133, 56, 54);
-    border: none;
     cursor: pointer;
 }
 .pagebtn img{
     width: 25px;
     height: 25px;
 }   
-.pagebar span{
-    font-size: 20px;
-    font-weight: 500;
-    text-decoration: underline;
-}
-.pagebar p{
-    font-size: 24px;
-    font-weight: 500;
-}
 
 /* Below is for cart page */
 .section-title2{
@@ -713,15 +573,10 @@ body{
     border-top-right-radius: 30px;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 30px;
-    background-color: rgb(86, 54, 46);
-    color: rgb(255, 255, 255);
-    font-weight: 600; 
-    font-size: 24px;
     margin: 25px auto 0;
     display: flex;
     align-items: center;
     padding-left: 25px;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
 .cart-detailbox{
     box-sizing: border-box;
@@ -735,9 +590,6 @@ body{
     margin: 25px auto 0;
     padding: 25px;
     border-radius: 15px;
-    border: 2px solid rgb(133, 56, 54);
-    background-color: rgb(253, 240, 220);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
 .cart-details{
     width: 1070px;
@@ -748,20 +600,12 @@ body{
 }
 .cart-details th, .cart-details td {
     padding: 20px;
-    text-align: left;
-    border-bottom: 2px solid rgb(133, 56, 54);
 }
 .cart-details th{
     height: 40px;
-    font-size: 24px;
-    font-weight: 600;
-    color: rgb(133, 56, 54);
 }
 .cart-details td{
     height: 130px;
-    font-size: 20px;
-    font-weight: 600;
-    color: rgb(22, 36, 68);
 }
 
 .unchecked{
@@ -780,8 +624,6 @@ body{
     height: 125px;
     overflow: hidden;
     border-radius: 15px;
-    border: 2px solid rgb(133, 56, 54);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
 .product-bought img{
     width: 100%;
@@ -805,8 +647,6 @@ body{
     align-items: center;
     height: 100%;
     width: 100px;
-    border: none;
-    background-color: rgb(253, 240, 220);
 }
 .quantity-button img{
     width: 30px;
@@ -832,13 +672,6 @@ body{
     height: 40px;
     width: 300px;
     border-radius: 15px;
-    font-family: 'Source Serif 4', serif;
-    font-size: 20px;
-    font-weight: 600;
-    color: white;
-    background-color: rgb(133, 56, 54);
-    border: none;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
 .price-total{
@@ -849,35 +682,16 @@ body{
     width: 350px;
     height: 40px;
     margin: 20px 0 0 auto;
-    border-bottom: 2px solid rgb(133, 56, 54);
 }
 
-.price-label{
-    font-size: 24px;
-    font-weight: 600;
-    color: rgb(22, 36, 68);
-}
-
-.price-number{
-    font-size: 24px;
-    font-weight: 600;
-    color: rgb(22, 36, 68);
-}
 .checkout-btn{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 350px;
     height: 40px;
-    background-color: rgb(133, 56, 54);
-    color: white;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-    border: none;
     border-radius: 15px;
     margin: 0px 0 0 auto;
-    font-weight: 600;
-    font-size: 20px;
-    text-decoration: none;
     cursor: pointer;
 }
 
@@ -892,9 +706,6 @@ body{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    border: 2px solid rgb(133, 56, 54);
-    background-color: rgb(253, 240, 220);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
 }
 .confirmation-icon{
@@ -903,17 +714,10 @@ body{
     margin: 0;
 }
 .confirmation h2{
-    font-size: 24px;
-    font-weight: 700;
-    color: rgb(22, 36, 68);
     margin: 10px auto 0;
 }
 .confirmation-message{
-    font-size: 20px;
-    font-weight: 600;
-    color: rgb(22, 36, 68);
     margin: 10px auto 0;
-    text-align: center;
 }
 .product-bought2{
     display: flex;
@@ -930,8 +734,6 @@ body{
     height: 125px;
     overflow: hidden;
     border-radius: 15px;
-    border: 2px solid rgb(133, 56, 54);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
 .img-boxc img{
     width: 100%;
@@ -953,23 +755,13 @@ body{
     flex-direction: column;
     width: 240px;
     height: 165px;
-    border-left: 2px solid rgb(133, 56, 54);
     padding-left: 10px;
 }
 .Order-detail h3{
-    font-size: 20px;
-    font-weight: 600;
-    color: rgb(22, 36, 68);
     margin: 0;
 }
 .Order-detail p{
-    font-size: 16px;
-    font-weight: 500;
-    color: rgb(22, 36, 68);
     margin: 10px auto 0;
-}
-.label{
-    font-weight: 600;
 }
 .btni{
     display: flex;
@@ -977,15 +769,8 @@ body{
     justify-content: center;
     width: 500px;
     height: 40px;
-    background-color: rgb(133, 56, 54);
-    color: white;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-    border: none;
     border-radius: 15px;
     margin: 40px auto 0;
-    font-weight: 600;
-    font-size: 20px;
-    text-decoration: none;
     cursor: pointer;
 }
 
@@ -1009,16 +794,11 @@ body{
     width: 545px;
     height: auto;
     border-radius: 15px;
-    border: 2px solid rgb(133, 56, 54);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-    background-color: rgb(253, 240, 220);
 }
 .cover-image{
     height: 500px;
     width: auto;
     border-radius: 15px;
-    border: 2px solid rgb(133, 56, 54);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
 .other-pics{
     display: flex;
@@ -1033,8 +813,6 @@ body{
     height: 80px;
     overflow: hidden;
     border-radius: 15px;
-    border: 2px solid rgb(133, 56, 54);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
 .other-pic-image{
     width: 100%;
@@ -1064,18 +842,11 @@ body{
     justify-content: center;
     width: 100%;
     border-radius: 15px;
-    border: 2px solid rgb(133, 56, 54);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-    background-color: rgb(253, 240, 220);
-    color: rgb(22, 36, 68);
 }
 .p-name{
     height: 30px;
     width: 400px;
-    font-size: 20px;
-    font-weight: 600;
     margin: 0;
-    border-bottom: 2px solid rgb(133, 56, 54);
 }
 .tags{
     height: 25px;
@@ -1094,38 +865,20 @@ body{
     height: 25px;
     padding: 0 10px;
     border-radius: 10px;
-    background-color: rgb(22, 36, 68);
-    color: rgb(255, 255, 255);
     margin: 0;
-}
-.tag-box span{
-    font-size: 14px;
-    font-weight: 500;
 }
 .l-label{
     width: 400px;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 1;
-    color: rgb(22, 36, 68);
     margin:0;
     padding: 0;
 }
 .l-price{
     width: 400px;
-    font-size: 28px;
-    font-weight: 600;
-    line-height: 1;
-    color: rgb(22, 36, 68);
     margin: 0;
     padding: 0;
 }
 .l-label2{
     width: 400px;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 1;
-    color: rgb(22, 36, 68);
     margin:0;
     padding: 10px 0 0;
 }
@@ -1149,13 +902,6 @@ body{
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    background-color: rgb(255, 255, 255);
-    border: 2px solid rgb(133, 56, 54);
-}
-.quantity-display p{
-    font-size: 14px;
-    font-weight: 600;
-    color: rgb(22, 36, 68);
 }
 /*below is button*/
 .add-to{
@@ -1168,16 +914,6 @@ body{
     justify-content: center;
     border-radius: 15px;
     cursor: pointer;
-    text-decoration: none;
-    background-color: rgb(133, 56, 54);
-    border: none;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-}
-.add-to span{
-    font-family: 'Source Serif 4', serif;
-    font-size: 20px;
-    font-weight: 600;
-    color: white;
 }
 .A-T{
     height: 30px;
@@ -1191,15 +927,10 @@ body{
     border-top-right-radius: 30px;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 30px;
-    background-color: rgb(86, 54, 46);
-    color: white;
-    font-weight: 600; 
-    font-size: 24px;
     margin: 5px auto 0;
     display: flex;
     align-items: center;
     padding-left: 25px;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
 .reasons-grid{
     display: grid;
@@ -1221,18 +952,10 @@ body{
     flex-direction: row;
     gap: 15px;
     border-radius: 15px;
-    border: 2px solid rgb(133, 56, 54);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-    background-color: rgb(253, 240, 220);
 }
 .reason-box img{
     width: 30px;
     height: 30px;
-}
-.reason-box p{
-    font-size: 16px;
-    font-weight: 600;
-    color: rgb(22, 36, 68);
 }
 /* Below is for section 2: Shipping */
 .shipping-info-box {
@@ -1245,14 +968,6 @@ body{
     height: 90px;
     margin: 25px auto 0;
     border-radius: 15px;
-    border: 2px solid rgb(133, 56, 54);
-    background-color: rgb(253, 240, 220);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-    color: rgb(22, 36, 68);
-}
-.shipping-info{
-    font-size: 16px;
-    font-weight: 600;
 }
 .description-info-box{
     box-sizing: border-box;
@@ -1265,21 +980,15 @@ body{
     gap: 20px;
     align-items: flex-start;
     justify-content: flex-start;
-    text-align: left;
     width: 1120px;
     height: auto;
     margin: 25px auto 0;
     border-radius: 15px;
-    border: 2px solid rgb(133, 56, 54);
-    background-color: rgb(253, 240, 220);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
 .description-info{
     margin: 0;
 }
-.highlight{
-    font-weight: 600;
-}
+
 .review-box{
     box-sizing: border-box;
     padding: 25px;
@@ -1291,13 +1000,8 @@ body{
     height: 150px;
     margin: 25px auto 0;
     border-radius: 15px;
-    border: 2px solid rgb(133, 56, 54);
-    background-color: rgb(253, 240, 220);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
 .review-input{
-    color: rgb(75, 75, 75);
-    line-height: 1;
     margin: 0;
 }
 .review-button{
@@ -1306,13 +1010,6 @@ body{
     width: 170px;
     border-radius: 10px;
     cursor: pointer;
-    background-color: rgb(133, 56, 54);
-    color: white;
-    border: none;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-    font-family: 'Source Serif 4', serif;
-    font-size: 14px;
-    font-weight: 600;
 }
 
 /* Below is for checkout page */
@@ -1335,21 +1032,11 @@ body{
     justify-content: center;
     align-items: center;
     gap: 15px;
-    background-color: rgb(86, 54, 46);
-    border: none;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
 .boxstyle1 h2{
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 1;
-    color: rgb(253, 233, 201);
     margin: 0;
 }
 .boxstyle1 h3{
-    font-size: 20px;
-    font-weight: 600;
-    color: rgb(253, 233, 201);
     margin: 0;
 }
 .boxstyle1 input{
@@ -1357,21 +1044,8 @@ body{
     width: 495px;
     height: 40px;
     padding: 10px;
-    border: 2px solid rgb(133, 56, 54);
     border-radius: 10px;
-    background-color: rgb(253, 240, 220);
-    color: rgb(22, 36, 68);
 }
-.boxstyle1 input::placeholder{
-    font-family: 'Source Serif 4', serif;
-}
-
-input.error::placeholder {                   /* Placeholder for error state */
-    color: rgb(193, 57, 52);
-    font-style: italic;
-    opacity: 1;
-}
-
 
 .express-options{
     display: flex;
@@ -1387,7 +1061,6 @@ input.error::placeholder {                   /* Placeholder for error state */
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    border: 2px solid rgb(133, 56, 54);
 }
 .express-options img{
     width: 100%;
@@ -1444,9 +1117,6 @@ input.error::placeholder {                   /* Placeholder for error state */
     height: 25px;
     cursor: pointer;
 }
-.notice p{
-    color: rgb(253, 233, 201);
-}
 
 .confirm-pay{
     display: flex;
@@ -1461,13 +1131,6 @@ input.error::placeholder {                   /* Placeholder for error state */
     height: 40px;
     margin: 0;
     border-radius: 15px;
-    border: none;
-    background-color: rgb(133, 56, 54);
-    color: white;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-    font-family: 'Source Serif 4', serif;
-    font-size: 24px;
-    font-weight: 600;
     cursor: pointer;
 }
 
@@ -1483,9 +1146,6 @@ input.error::placeholder {                   /* Placeholder for error state */
     width: 545px;
     height: auto;
     margin-bottom: 25px;
-    background-color: rgb(253, 240, 220);
-    border: 2px solid rgb(133, 56, 54);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
 .title-borderbox{
     box-sizing: border-box;
@@ -1495,14 +1155,9 @@ input.error::placeholder {                   /* Placeholder for error state */
     margin: 0;
     width: 100%;
     height: 35px;
-    border-bottom: 2px solid rgb(133, 56, 54);
 }
 .order-summary-title{
     margin: 0;
-    line-height: 1;
-    font-size: 24px;
-    font-weight: 600;
-    color: rgb(133, 56, 54);
 }
 .product-boughtlist{
     display: flex;
@@ -1512,19 +1167,11 @@ input.error::placeholder {                   /* Placeholder for error state */
     justify-content: flex-start;
     width: 100%;
     height: 165px;
-    border-bottom: 2px solid rgb(133, 56, 54);
 }
 .product-nm{
-    font-size: 16px;
-    font-weight: 600;
-    color: rgb(22, 36, 68);
     width: 190px;
 }
-.product-price{
-    font-size: 16px;
-    font-weight: 600;
-    color: rgb(22, 36, 68);
-}
+
 .discount-code{
     display: flex;
     justify-content: space-between;
@@ -1538,25 +1185,13 @@ input.error::placeholder {                   /* Placeholder for error state */
     width: 280px;
     height: 30px;
     padding: 10px;
-    border: 2px solid rgb(133, 56, 54);
     border-radius: 10px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(22, 36, 68);
 }
 .discount-code button{
     width: 140px;
     height: 30px;
     border-radius: 10px;
-    border: none;
-    background-color: rgb(133, 56, 54);
-    color: white;
     cursor: pointer;
-    font-family: 'Source Serif 4', serif;
-    font-size: 16px;
-    font-weight: 600;
-}
-.discount-code input::placeholder{
-    font-family: 'Source Serif 4', serif;
 }
 .summary1{
     display: flex;
@@ -1566,16 +1201,6 @@ input.error::placeholder {                   /* Placeholder for error state */
     height: 20px;
     margin-top: 15px;
 }
-.summary-label{
-    font-size: 16px;
-    font-weight: 700;
-    color: rgb(22, 36, 68);
-}
-.summary-value{
-    font-size: 16px;
-    font-weight: 600;
-    color: rgb(22, 36, 68);
-}
 .summary2{
     display: flex;
     justify-content: space-between;
@@ -1583,14 +1208,4 @@ input.error::placeholder {                   /* Placeholder for error state */
     width: 100%;
     height: 30px;
     margin-top: 20px;
-}
-.summary-label2{
-    font-size: 20px;
-    font-weight: 700;
-    color: rgb(22, 36, 68);
-}
-.summary-value2{
-    font-size: 20px;
-    font-weight: 600;
-    color: rgb(22, 36, 68);
 }
